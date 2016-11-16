@@ -1,0 +1,17 @@
+package me.dodam.dodam.web;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.web.WebApplicationInitializer;
+
+public class WebAppInitializer implements WebApplicationInitializer {
+
+	@Override
+	public void onStartup(ServletContext arg0) throws ServletException {
+		AnnotationConfigApplicationContext dispatcherServlet = new AnnotationConfigApplicationContext();
+		
+
+	}
+}

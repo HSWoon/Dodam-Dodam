@@ -1,0 +1,5 @@
+package me.dodam.dodam.web.admin.user;
+
+public class UserController {
+
+}

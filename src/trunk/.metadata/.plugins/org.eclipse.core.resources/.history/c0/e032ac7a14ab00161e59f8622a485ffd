@@ -1,0 +1,16 @@
+package me.dodam.dodam.web.admin.user;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("user")
+public class UserController {
+
+	private final String VIEW_PREFIX = "user/";
+
+	@RequestMapping("/list")
+	public String list(){
+		return VIEW_PREFIX +  "list";
+	}	
+}

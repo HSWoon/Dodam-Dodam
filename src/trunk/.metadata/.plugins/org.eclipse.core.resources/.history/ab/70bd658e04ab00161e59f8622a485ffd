@@ -1,0 +1,12 @@
+package me.dodam.dodam.web.admin;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DodamWebApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DodamWebApplication.class, args);
+	}
+}

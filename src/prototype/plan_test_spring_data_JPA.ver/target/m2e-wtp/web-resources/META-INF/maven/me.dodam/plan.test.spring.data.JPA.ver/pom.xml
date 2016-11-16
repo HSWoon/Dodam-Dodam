@@ -1,0 +1,119 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>me.dodam</groupId>
+	<artifactId>plan.test.spring.data.JPA.ver</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>plan.test.spring.data.JPA.ver</name>
+	<url>http://maven.apache.org</url>
+
+
+	<properties>
+		<springframework.version>4.1.6.RELEASE</springframework.version>
+		<springframework.data.jpa.version>1.8.0.RELEASE</springframework.data.jpa.version>
+		
+		<springframework.hateoas.version>0.5.0.RELEASE</springframework.hateoas.version>
+		
+		<jpa.hibernate.version>4.3.10.Final</jpa.hibernate.version>
+		
+		<h2.database.version>1.4.187</h2.database.version>
+		<tomcat.jdbc.version>7.0.57</tomcat.jdbc.version>
+		
+		<jstl.version>1.2</jstl.version>
+		<servlet.version>3.0.1</servlet.version>
+		<jsp.version>2.3.1</jsp.version>
+		
+		<java.version>1.6</java.version>
+	</properties>
+
+	<dependencies>
+		<!-- 스프링 MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		
+		<!-- 스프링 ORM -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		
+		<!-- JPA, hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${jpa.hibernate.version}</version>
+		</dependency>
+		
+		<!-- h2 database -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.database.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		
+		<!-- connection pool(JDBC) -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+			<version>${tomcat.jdbc.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		<!-- WEB -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>${jsp.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<!-- spring data JPA -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${springframework.data.jpa.version}</version>
+		</dependency>
+		
+<!-- 		<dependency> -->
+<!-- 		    <groupId>org.springframework.hateoas</groupId> -->
+<!-- 		    <artifactId>spring-hateoas</artifactId> -->
+<!-- 		    <version>${springframework.hateoas.version}</version> -->
+<!-- 		</dependency> -->
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
