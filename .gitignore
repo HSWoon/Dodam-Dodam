@@ -8,7 +8,9 @@ build/
 !gradle-wrapper.jar
 .gradletasknamecache
 .metadata
+.recommenders
 
 .project
 
 .DS_Store
+
