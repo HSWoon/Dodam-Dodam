@@ -1,3 +1,4 @@
+
 RemoteSystemsTempFiles
 
 gradle-app.setting
@@ -7,8 +8,12 @@ build/
 .gradle
 !gradle-wrapper.jar
 .gradletasknamecache
+
 .metadata
 .recommenders
+
+*.class
+*.war
 
 .project
 
